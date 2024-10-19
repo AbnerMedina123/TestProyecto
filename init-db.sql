@@ -1,0 +1,6 @@
+DROP USER IF EXISTS 'user'@'%';
+CREATE USER 'user'@'%' IDENTIFIED BY 'password';
+DROP DATABASE IF EXISTS AulaDigital;
+CREATE DATABASE AulaDigital;
+GRANT ALL PRIVILEGES ON AulaDigital.* TO 'user'@'%';
+FLUSH PRIVILEGES;
